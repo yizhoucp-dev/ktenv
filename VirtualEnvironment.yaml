@@ -1,0 +1,12 @@
+apiVersion: env.alibaba.com/v1alpha2
+kind: VirtualEnvironment
+metadata:
+  name: virtualenv
+spec:
+  envHeader:
+    name: ali-env-mark
+    autoInject: true
+  envLabel:
+    defaultSubset: dev
+    name: virtual-env
+    splitter: '-'
